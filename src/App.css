@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+ul {
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.pageBody1 {
+  flex: 80px;
+}
+.pageBody2 {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 80px);
+  /* flex: calc(100vh - 80px); */
+}
+
+.about,
+.contact,
+.home,
+.donate,
+.logout,
+.login,
+.setting {
+  display: flex;
+  /* margin-right: 300px; */
+  padding-top: 80px;
+  padding-left: 240px;
+  padding-bottom: 1px;
+  padding-right: 0px;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  color: white;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: 1rem;
+  background-color: rgb(53, 51, 51);
+  /* background-color: pink; */
+}
+
+.donate .donate__form {
+  border: 1px solid grey;
+  margin-left: 325px;
+  padding: 0px 30px 0px 30px;
+  background-color: rgb(170, 169, 169);
+  height: 500px;
+  width: 600px;
+}
+
+.donate .donate__form .input__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  gap: 3rem;
+}
+
+/* .home .grid {
+
+  height: calc(100vh - 80px);
+  width: calc(100vw - 240px);
+  background-color: rgb(53, 51, 51);
+  
+  padding-top: 80px;
+  padding-left: 240px;
+
+
+} */
+
+.home .grid .upper__div {
+  background-color: rgb(53, 51, 51);
+  /* border: 1px solid black; */
+  padding: 20px;
+  height: 60%;
+  width: 94%;
+  display: flex;
+  justify-content: center;
+}
+
+.upper__divimageText {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  padding: 150px;
+  display: block;
+  font-style: italic;
+  font-display: unset;
+  /* background-color: rgba(224, 224, 217, 0.911);*/
+}
+.home .grid .lower__div {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  height: auto;
+  background-color: rgb(53, 51, 51);
+  /* border: 1px solid pink; */
+  display: flex;
+  justify-content: center;
+}
+
+.home .grid .lower__div .lower__divcontainer {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 1500px;
+  height: auto;
+  background-color: rgb(53, 51, 51);
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+
+.lower__divcontainer .one,
+.two,
+.three {
+  height: 350px;
+  width: 400px;
+  border-radius: 2rem;
+  background-color: rgb(22, 21, 21);
+}
+
+.one,
+.two {
+  margin-right: 20px;
+}
